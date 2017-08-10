@@ -2,6 +2,7 @@
  * Created by Lotus on 8/9/17.
  */
 import React, { Component } from 'react'
+import './../stylesheets/Header.scss'
 
 export default class Header extends Component {
     constructor() {
