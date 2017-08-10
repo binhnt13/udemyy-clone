@@ -1,0 +1,209 @@
+@font-face {
+  font-family: 'UdemyIcons';
+  src: url(./fonts/UdemyIcons.woff2) format("woff2"); }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url(fonts/OpenSans1.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url(fonts/OpenSans2.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url(fonts/OpenSans3.woff2) format("woff2");
+  font-weight: 800;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url(fonts/OpenSans4.woff2) format("woff2");
+  font-weight: 900;
+  font-style: normal; }
+
+body {
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size: 15px;
+  line-height: 1.43;
+  color: #333;
+  background-color: #fff;
+  margin: 0;
+  padding: 0; }
+
+a {
+  color: #1376d7;
+  font-weight: 400;
+  text-decoration: none;
+  background-color: transparent; }
+  a:hover {
+    cursor: pointer; }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+ol ol, ol ul, ul ol, ul ul {
+  margin-bottom: 0; }
+
+figcaption, figure {
+  display: block; }
+
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 11px 12px;
+  font-size: 15px;
+  line-height: 1.43;
+  border-radius: 2px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.btn {
+  line-height: 1.35135; }
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  min-width: 320px; }
+
+.container-fluid:after, .container:after, .row:after {
+  clear: both; }
+
+.container-fluid:after, .container-fluid:before, .container:after, .container:before, .row:after, .row:before {
+  content: " ";
+  display: table; }
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px; } }
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px; } }
+
+.open > a {
+  outline: 0; }
+
+.close {
+  float: right;
+  font-size: 22.5px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: none;
+  opacity: .2;
+  filter: alpha(opacity=20); }
+
+.udi {
+  vertical-align: -8%;
+  font-family: UdemyIcons !important;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.udi-minus:before {
+  content: "\F068"; }
+
+.tal {
+  text-align: left; }
+
+.timeTo {
+  font-family: Tahoma,Verdana,Aial,sans-serif;
+  font-size: 28px;
+  line-height: 108%;
+  font-weight: 700;
+  height: 32px; }
+  .timeTo figure {
+    display: inline-block;
+    margin: 0;
+    padding: 0; }
+  .timeTo figcaption {
+    text-align: center;
+    line-height: 80%;
+    font-weight: 400;
+    color: #888; }
+  .timeTo div {
+    position: relative;
+    display: inline-block;
+    width: 25px;
+    height: 30px;
+    border-top: 1px solid silver;
+    border-right: 1px solid silver;
+    border-bottom: 1px solid silver;
+    overflow: hidden; }
+    .timeTo div.first {
+      border-left: 1px solid silver; }
+  .timeTo ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 3px; }
+
+.hello-spacing-wrapper > * {
+  margin: 10px 0; }
+
+.ellipsis {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px dashed;
+  border-top: 4px solid\9;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent; }
+
+.h100p {
+  height: 100%; }
+
+.fx-dc, .fxdc {
+  display: flex;
+  flex-direction: column; }
+
+[role=button] {
+  cursor: pointer; }
+
+.udi-next:before {
+  content: "\E73E"; }
+
+.udi-development:before {
+  content: "\E6AD"; }
+
+.udi-business:before {
+  content: "\E69F"; }
+
+.udi-it-and-software:before {
+  content: "\E6D2"; }
+
+.udi-web-development:before {
+  content: "\E720"; }
