@@ -1,35 +1,30 @@
 @font-face {
   font-family: 'UdemyIcons';
-  src: url(./fonts/UdemyIcons.woff2) format('woff2');
-}
+  src: url(./fonts/UdemyIcons.woff2) format("woff2"); }
 
 @font-face {
   font-family: 'Open Sans';
-  src: url(fonts/OpenSans1.woff2) format('woff2');
+  src: url(fonts/OpenSans1.woff2) format("woff2");
   font-weight: normal;
-  font-style: normal;
-}
+  font-style: normal; }
 
 @font-face {
   font-family: 'Open Sans';
-  src: url(fonts/OpenSans2.woff2) format('woff2');
-  font-weight: 700;
-  font-style: normal;
-}
+  src: url(fonts/OpenSans2.woff2) format("woff2");
+  font-weight: 500;
+  font-style: normal; }
 
 @font-face {
   font-family: 'Open Sans';
-  src: url(fonts/OpenSans3.woff2) format('woff2');
+  src: url(fonts/OpenSans3.woff2) format("woff2");
   font-weight: 800;
-  font-style: normal;
-}
+  font-style: normal; }
 
 @font-face {
   font-family: 'Open Sans';
-  src: url(fonts/OpenSans4.woff2) format('woff2');
+  src: url(fonts/OpenSans4.woff2) format("woff2");
   font-weight: 900;
-  font-style: normal;
-}
+  font-style: normal; }
 
 body {
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -38,33 +33,45 @@ body {
   color: #333;
   background-color: #fff;
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 a {
   color: #1376d7;
   font-weight: 400;
   text-decoration: none;
-  background-color: transparent;
-
-  &:hover {
-    cursor: pointer;
-  }
-}
+  background-color: transparent; }
+  a:hover {
+    cursor: pointer; }
 
 ul {
   list-style: none;
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 ol ol, ol ul, ul ol, ul ul {
-  margin-bottom: 0;
-}
+  margin-bottom: 0; }
 
 figcaption, figure {
-  display: block;
-}
+  display: block; }
+
+.blockLabel, label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 400; }
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit; }
+
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
 
 .btn {
   display: inline-block;
@@ -84,45 +91,35 @@ figcaption, figure {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none;
-}
+  user-select: none; }
 
-.btn {
-  line-height: 1.35135;
-}
+.btn:focus, .dropdown-toggle:focus, :focus, a:focus, input:focus {
+  outline: none; }
 
 .container {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
-  min-width: 320px;
-}
+  min-width: 320px; }
 
 .container-fluid:after, .container:after, .row:after {
-  clear: both;
-}
+  clear: both; }
 
 .container-fluid:after, .container-fluid:before, .container:after, .container:before, .row:after, .row:before {
   content: " ";
-  display: table;
-}
+  display: table; }
 
 @media (min-width: 768px) {
   .container {
-    width: 750px;
-  }
-}
+    width: 750px; } }
 
 @media (min-width: 992px) {
   .container {
-    width: 970px;
-  }
-}
+    width: 970px; } }
 
-.open>a {
-  outline: 0;
-}
+.open > a {
+  outline: 0; }
 
 .close {
   float: right;
@@ -132,12 +129,11 @@ figcaption, figure {
   color: #000;
   text-shadow: none;
   opacity: .2;
-  filter: alpha(opacity=20);
-}
+  filter: alpha(opacity=20); }
 
 .udi {
   vertical-align: -8%;
-  font-family: UdemyIcons!important;
+  font-family: UdemyIcons !important;
   speak: none;
   font-style: normal;
   font-weight: 400;
@@ -145,38 +141,30 @@ figcaption, figure {
   text-transform: none;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  -moz-osx-font-smoothing: grayscale; }
 
 .udi-minus:before {
-  content: "\F068";
-}
+  content: "\F068"; }
 
 .tal {
-  text-align: left;
-}
+  text-align: left; }
 
 .timeTo {
   font-family: Tahoma,Verdana,Aial,sans-serif;
   font-size: 28px;
   line-height: 108%;
   font-weight: 700;
-  height: 32px;
-
-  figure {
+  height: 32px; }
+  .timeTo figure {
     display: inline-block;
     margin: 0;
-    padding: 0;
-  }
-
-  figcaption {
+    padding: 0; }
+  .timeTo figcaption {
     text-align: center;
     line-height: 80%;
     font-weight: 400;
-    color: #888;
-  }
-
-  div {
+    color: #888; }
+  .timeTo div {
     position: relative;
     display: inline-block;
     width: 25px;
@@ -184,32 +172,24 @@ figcaption, figure {
     border-top: 1px solid silver;
     border-right: 1px solid silver;
     border-bottom: 1px solid silver;
-    overflow: hidden;
-
-    &.first {
-      border-left: 1px solid silver;
-    }
-  }
-
-  ul {
+    overflow: hidden; }
+    .timeTo div.first {
+      border-left: 1px solid silver; }
+  .timeTo ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     position: absolute;
-    left: 3px;
-  }
-}
+    left: 3px; }
 
-.hello-spacing-wrapper>* {
-  margin: 10px 0;
-}
+.hello-spacing-wrapper > * {
+  margin: 10px 0; }
 
 .ellipsis {
   display: block;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
-}
+  white-space: nowrap; }
 
 .caret {
   display: inline-block;
@@ -220,39 +200,55 @@ figcaption, figure {
   border-top: 4px dashed;
   border-top: 4px solid\9;
   border-right: 4px solid transparent;
-  border-left: 4px solid transparent;
-}
+  border-left: 4px solid transparent; }
 
 .h100p {
-  height: 100%;
-}
+  height: 100%; }
 
 .fx-dc, .fxdc {
   display: flex;
-  flex-direction: column;
-}
+  flex-direction: column; }
 
 [role=button] {
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 .udi-next:before {
-  content: "\E73E";
-}
+  content: "\E73E"; }
 
 .udi-development:before {
-  content: "\E6AD";
-}
+  content: "\E6AD"; }
 
 .udi-business:before {
-  content: "\E69F";
-}
+  content: "\E69F"; }
 
 .udi-it-and-software:before {
-  content: "\E6D2";
-}
+  content: "\E6D2"; }
 
 .udi-web-development:before {
-  content: "\E720";
-}
+  content: "\E720"; }
 
+.udi-search:before {
+  content: "\F002"; }
+
+.udi-menu:before {
+  content: "\E73B"; }
+
+.udi-previous:before {
+  content: "\E741"; }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0; }
+
+.ml20 {
+  margin-left: 20px; }
+
+.fx {
+  flex: 1;
+  min-width: 1px; }
