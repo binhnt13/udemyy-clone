@@ -295,12 +295,12 @@
     font-size: 10px;
     margin-right: -2px;
     padding: 0; }
-  .container-header .menu__sub-list .menu__main-title {
-    font-size: 15px; }
   .container-header .menu__sub-list a {
-    color: #fff; }
+    color: #fff !important; }
     .container-header .menu__sub-list a:hover {
       background: rgba(255, 255, 255, 0.1); }
+  .container-header .menu__sub-list .menu__main-title {
+    font-size: 15px; }
   .container-header .c_header__search {
     flex: 1;
     min-width: 1px;
@@ -435,6 +435,9 @@
       display: block; }
     .container-header .dropdown--instructor, .container-header .dropdown--mycourses, .container-header .dropdown--ufb {
       display: none; } }
+  .container-header .c_header__mobile-spacer {
+    display: none;
+    visibility: hidden; }
   @media (max-width: 767px) {
     .container-header .hello-bar .hello-title {
       display: block;

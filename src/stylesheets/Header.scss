@@ -438,16 +438,16 @@
 
   .menu__sub-list {
 
-    .menu__main-title {
-      font-size: 15px;
-    }
-
     a {
-      color: #fff;
+      color: #fff !important;
 
       &:hover {
         background: hsla(0,0%,100%,.1);
       }
+    }
+
+    .menu__main-title {
+      font-size: 15px;
     }
   }
 
@@ -650,6 +650,11 @@
     .dropdown--instructor, .dropdown--mycourses, .dropdown--ufb {
       display: none;
     }
+  }
+
+  .c_header__mobile-spacer {
+    display: none;
+    visibility: hidden;
   }
 
   @media (max-width: 767px) {
