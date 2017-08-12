@@ -4,9 +4,11 @@
 import Footer from './Footer'
 import Header from './Header'
 import Homepage from './Homepage'
+import Discovery from './Discovery'
 
 export {
     Footer,
     Header,
-    Homepage
+    Homepage,
+    Discovery
 }

@@ -3,6 +3,8 @@
  */
 import React, { Component } from 'react'
 import './../stylesheets/Homepage.css'
+import Discovery from './Discovery'
+import {ChannelAchieve} from './../components'
 
 export default class Homepage extends Component {
     constructor() {
@@ -28,8 +30,11 @@ export default class Homepage extends Component {
                                     <input type="hidden" name="ref" value="home" autoComplete="off" />
                                         <input type="hidden" name="src" value="ukw" autoComplete="off" />
                                             <div className="streamer-search input-group">
-                                                <label for="search-field-home" className="sr-only">Search:</label>
-                                                <input type="search" name="q" id="search-field-home" className="form-control ng-pristine ng-untouched ng-valid ng-empty" placeholder="What do you want to learn?" autoComplete="off" />
+                                                <label htmlFor="search-field-home" className="sr-only">Search:</label>
+                                                <input type="search" name="q" id="search-field-home"
+                                                       className="form-control ng-pristine ng-untouched ng-valid ng-empty"
+                                                       placeholder="What do you want to learn?" autoComplete="off"
+                                                />
                                                 <span className="input-group-btn">
                                                     <button className="btn btn-primary" type="submit" aria-label="Search" style={{height: '100%'}}>
                                                         <span className="udi udi-search" />
@@ -73,7 +78,10 @@ export default class Homepage extends Component {
                         <ui-view>
                             <div className="channels">
                                 <div className="discovery-unit-container fx">
+                                    <Discovery />
+                                    <ChannelAchieve />
 
+                                    <Discovery isOtherTop={true}/>
                                 </div>
                             </div>
                         </ui-view>

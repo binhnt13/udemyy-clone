@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import './stylesheets/Common.css';
 import App from './containers/App';
 import registerServiceWorker from './registerServiceWorker';
-import {Item} from './components'
+import {Item, Channel} from './components'
+import Homepage from "./containers/Homepage";
 
-ReactDOM.render(<Item />, document.getElementById('root'));
+ReactDOM.render(<Homepage />, document.getElementById('root'));
 registerServiceWorker();
