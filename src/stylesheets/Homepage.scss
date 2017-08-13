@@ -109,6 +109,12 @@
       background-position: 0 0;
     }
   }
+
+  @media (min-width: 1431px) {
+    .carousel-fullscreen-sidebar {
+      width: 1405px;
+    }
+  }
 }
 
 //merchandising-course-card--card--18b3i merchandising-course-card--responsive--2gbJO

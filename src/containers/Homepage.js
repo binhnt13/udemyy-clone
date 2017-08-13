@@ -4,7 +4,7 @@
 import React, { Component } from 'react'
 import './../stylesheets/Homepage.css'
 import Discovery from './Discovery'
-import {ChannelAchieve} from './../components'
+import {ChannelAchieve, FeatureInstruction} from './../components'
 
 export default class Homepage extends Component {
     constructor() {
@@ -80,11 +80,42 @@ export default class Homepage extends Component {
                                 <div className="discovery-unit-container fx">
                                     <Discovery />
                                     <ChannelAchieve />
-
+                                    <FeatureInstruction />
                                     <Discovery isOtherTop={true}/>
                                 </div>
                             </div>
                         </ui-view>
+                    </div>
+                </div>
+
+                {/*------------------ *** --------------------*/}
+                <div className="non-student-cta">
+                    <div className="non-student-cta__block">
+                        <div className="non-student-cta__text">
+                            <div className="non-student-cta__header">
+                                <a href="/teaching/?ref=teach_home-body">Become an Instructor</a>
+                            </div>
+                            <div className="non-student-cta__content">
+                                Teach what you love. Udemy gives you the tools to create an online course.
+                            </div>
+                            <div className="non-student-cta__link">
+                                <a href="/teaching/?ref=teach_home-body" className="btn btn-primary">Start teaching</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="non-student-cta__block">
+                        <div className="non-student-cta__text">
+                            <div className="non-student-cta__header">
+                                <a href="https://business.udemy.com/?ref=ufb_home-body">Udemy for Business</a>
+                            </div>
+                            <div className="non-student-cta__content">
+                                Get unlimited access to 2,000 of Udemy’s top courses for your team.
+                            </div>
+                            <div className="non-student-cta__link">
+                                <a href="https://business.udemy.com/?ref=ufb_home-body" className="btn btn-primary">Get Udemy for Business</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -4,9 +4,11 @@
 import Channel from './Channel'
 import Item from './Item'
 import ChannelAchieve from './ChannelAchieve'
+import FeatureInstruction from './FeatureInstruction'
 
 export {
     Channel,
     Item,
-    ChannelAchieve
+    ChannelAchieve,
+    FeatureInstruction
 }
