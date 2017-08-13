@@ -259,6 +259,12 @@
       background: #02a1a5; }
     .container-header .dropdown__menu.skin5 {
       background: #006b9c; }
+    .container-header .dropdown__menu.skin4 {
+      background: #32377a; }
+    .container-header .dropdown__menu.skin3 {
+      background: #540768; }
+    .container-header .dropdown__menu.skin2 {
+      background: #960075; }
   .container-header .dropdown__menu--sub {
     border: 0;
     left: 100%;

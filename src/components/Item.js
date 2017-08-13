@@ -11,7 +11,8 @@ export default class Item extends Component{
     render() {
 
         return(
-            <div className="container-item merchandising-course-card--card--18b3i merchandising-course-card--responsive--2gbJO">
+            <div className="container-item ">
+            <div className="merchandising-course-card--card--18b3i merchandising-course-card--responsive--2gbJO">
                 {
                     this.props.bestSell
                     &&
@@ -64,6 +65,7 @@ export default class Item extends Component{
                         </div>
                     </span>
                 </a>
+            </div>
             </div>
         )
     }

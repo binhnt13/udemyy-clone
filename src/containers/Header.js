@@ -22,9 +22,20 @@ export default class Header extends Component {
     componentDidUpdate() {
         const navMobileMenu = $("#nav-mobile-menu");
         const buttonOpen = $("#bt-open-mobile-menu");
+        const buttonOpenSub = $("#bt-open-mobile-sub-menu");
+        const buttonBackMenu = $("#bt-back-mobile-menu");
         buttonOpen.click(function (e) {
             e.stopPropagation();
             navMobileMenu.addClass('nav-open')
+        });
+        buttonOpenSub.click(function (e) {
+            e.stopPropagation();
+            navMobileMenu.addClass('nav-open--sub')
+        });
+        buttonBackMenu.click(function (e) {
+            e.stopPropagation();
+            navMobileMenu.removeClass('nav-open--sub');
+
         });
         $(document).click(function (e)
         {
@@ -73,18 +84,6 @@ export default class Header extends Component {
     openMenuMobile = () => {
         this.setState({
             menuMobileClass: 'nav-open'
-        })
-    };
-
-    openMobileSubMenu = () => {
-        this.setState({
-            subMenuMobileClass: 'nav-open--sub'
-        })
-    };
-
-    backMobileMenu = () => {
-        this.setState({
-            subMenuMobileClass: ''
         })
     };
 
@@ -285,7 +284,7 @@ export default class Header extends Component {
                                 </a>
                             </li>
                             <li className="menu__link">
-                                <a onClick={this.openMobileSubMenu}>
+                                <a id="bt-open-mobile-sub-menu">
                                     <span className="menu__title ellipsis">Categories</span>
                                     <span className="udi udi-next" />
                                 </a>
@@ -328,7 +327,7 @@ export default class Header extends Component {
 
                     <div className="overflow-nav--sub">
                         <header>
-                            <button onClick={this.backMobileMenu} className="overflow-nav__back-bt">
+                            <button id="bt-back-mobile-menu" className="overflow-nav__back-bt">
                                 <span className="udi udi-previous" />
                                 Menu
                             </button>
@@ -406,8 +405,8 @@ Header.defaultProps = {
             skin: 'skin6'
         },
         {
-            name: 'Development',
-            icon: 'udi-development',
+            name: 'Office Productivity',
+            icon: 'udi-office-productivity',
             sub: [
                 {
                     name: 'Web development',
@@ -421,8 +420,8 @@ Header.defaultProps = {
             skin: 'skin5'
         },
         {
-            name: 'Business',
-            icon: 'udi-business',
+            name: 'Personal Development',
+            icon: 'udi-personal-development',
             sub: [
                 {
                     name: 'Finance',
@@ -433,11 +432,11 @@ Header.defaultProps = {
                     icon: 'udi-finance'
                 }
             ],
-            skin: 'skin6'
+            skin: 'skin2'
         },
         {
-            name: 'IT & Software',
-            icon: 'udi-it-and-software',
+            name: 'Design',
+            icon: 'udi-design',
             sub: [
                 {
                     name: 'IT Certification',
@@ -446,9 +445,189 @@ Header.defaultProps = {
                 {
                     name: 'IT Certification',
                     icon: 'udi-it-certification'
+                }
+            ],
+            skin: 'skin3'
+        },
+        {
+            name: 'Marketing',
+            icon: 'udi-marketing',
+            sub: [
+                {
+                    name: 'Finance',
+                    icon: 'udi-finance'
+                },
+                {
+                    name: 'Finance',
+                    icon: 'udi-finance'
                 }
             ],
             skin: 'skin5'
+        },
+        {
+            name: 'Design',
+            icon: 'udi-design',
+            sub: [
+                {
+                    name: 'IT Certification',
+                    icon: 'udi-it-certification'
+                },
+                {
+                    name: 'IT Certification',
+                    icon: 'udi-it-certification'
+                }
+            ],
+            skin: 'skin3'
+        },
+        {
+            name: 'Marketing',
+            icon: 'udi-marketing',
+            sub: [
+                {
+                    name: 'Finance',
+                    icon: 'udi-finance'
+                },
+                {
+                    name: 'Finance',
+                    icon: 'udi-finance'
+                }
+            ],
+            skin: 'skin5'
+        },
+        {
+            name: 'Design',
+            icon: 'udi-design',
+            sub: [
+                {
+                    name: 'IT Certification',
+                    icon: 'udi-it-certification'
+                },
+                {
+                    name: 'IT Certification',
+                    icon: 'udi-it-certification'
+                }
+            ],
+            skin: 'skin3'
+        },
+        {
+            name: 'Lifestyle',
+            icon: 'udi-lifestyle',
+            sub: [
+                {
+                    name: 'Finance',
+                    icon: 'udi-finance'
+                },
+                {
+                    name: 'Finance',
+                    icon: 'udi-finance'
+                }
+            ],
+            skin: 'skin2'
+        },
+        {
+            name: 'Photography',
+            icon: 'udi-photography',
+            sub: [
+                {
+                    name: 'IT Certification',
+                    icon: 'udi-it-certification'
+                },
+                {
+                    name: 'IT Certification',
+                    icon: 'udi-it-certification'
+                }
+            ],
+            skin: 'skin3'
+        },
+        {
+            name: 'Health & Fitness',
+            icon: 'udi-health-and-fitness',
+            sub: [
+                {
+                    name: 'Finance',
+                    icon: 'udi-finance'
+                },
+                {
+                    name: 'Finance',
+                    icon: 'udi-finance'
+                }
+            ],
+            skin: 'skin2'
+        },
+        {
+            name: 'Teacher Training',
+            icon: 'udi-teacher-training',
+            sub: [
+                {
+                    name: 'IT Certification',
+                    icon: 'udi-it-certification'
+                },
+                {
+                    name: 'IT Certification',
+                    icon: 'udi-it-certification'
+                }
+            ],
+            skin: 'skin4'
+        },
+        {
+            name: 'Music',
+            icon: 'udi-music',
+            sub: [
+                {
+                    name: 'Finance',
+                    icon: 'udi-finance'
+                },
+                {
+                    name: 'Finance',
+                    icon: 'udi-finance'
+                }
+            ],
+            skin: 'skin3'
+        },
+        {
+            name: 'Academics',
+            icon: 'udi-academics',
+            sub: [
+                {
+                    name: 'IT Certification',
+                    icon: 'udi-it-certification'
+                },
+                {
+                    name: 'IT Certification',
+                    icon: 'udi-it-certification'
+                }
+            ],
+            skin: 'skin4'
+        },
+        {
+            name: 'Language',
+            icon: 'udi-language',
+            sub: [
+                {
+                    name: 'Finance',
+                    icon: 'udi-finance'
+                },
+                {
+                    name: 'Finance',
+                    icon: 'udi-finance'
+                }
+            ],
+            skin: 'skin4'
+        },
+        {
+            name: 'Test Prep',
+            icon: 'udi-test-prep',
+            sub: [
+                {
+                    name: 'IT Certification',
+                    icon: 'udi-it-certification'
+                },
+                {
+                    name: 'IT Certification',
+                    icon: 'udi-it-certification'
+                }
+            ],
+            skin: 'skin4'
         }
     ]
 };

@@ -17,8 +17,6 @@ export default class Discovery extends Component{
             otherTop
         } = this.props;
 
-        console.log(Object.keys(discovery));
-
         return(
             <div className="container-discovery discovery-unit-container fx">
                 {

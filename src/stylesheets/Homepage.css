@@ -6,26 +6,6 @@
 .container-homepage .carousel-fullscreen-sidebar {
   margin: 30px auto; }
 
-@media (min-width: 576px) {
-  .container-homepage .channels {
-    padding-top: 8px; } }
-
-@media (min-width: 768px) {
-  .container-homepage .carousel-fullscreen-sidebar {
-    width: 754px;
-    padding-left: 15px;
-    padding-right: 15px; }
-  .container-homepage .channels {
-    padding-top: 56px; } }
-
-@media (min-width: 992px) {
-  .container-homepage .carousel-fullscreen-sidebar {
-    width: 974px; } }
-
-@media (min-width: 1200px) {
-  .container-homepage .carousel-fullscreen-sidebar {
-    width: 1174px; } }
-
 .container-homepage .channels {
   margin-top: 0; }
 
@@ -64,21 +44,45 @@
 .container-homepage .carousel-fullscreen-sidebar:last-child {
   margin-bottom: 0; }
 
+@media (max-width: 1431px) {
+  .container-homepage .streamer {
+    background-size: 119%;
+    background-position: 0 0; } }
+
+@media (max-width: 992px) {
+  .container-homepage .streamer--base {
+    background-size: auto 130%;
+    background-position: 29% 10%; } }
+
+@media (max-width: 768px) {
+  .container-homepage .how-udemy-works-container {
+    display: none; } }
+
+@media (max-width: 575px) {
+  .container-homepage .streamer {
+    position: relative; }
+  .container-homepage .streamer--base {
+    background-size: 112%;
+    background-position: center 57%; } }
+
 @media (min-width: 576px) {
   .container-homepage .streamer {
     align-items: center;
     background-image: url("./../stylesheets/images/homepage_hero_cropped.jpg");
     height: 500px;
-    padding: 0; } }
+    padding: 0; }
+  .container-homepage .channels {
+    padding-top: 8px; } }
+
+@media (min-width: 768px) {
+  .container-homepage .channels {
+    padding-top: 56px; } }
 
 @media (min-width: 1200px) {
   .container-homepage .streamer--base {
-    background-position: center 30%; } }
-
-@media (max-width: 1431px) {
-  .container-homepage .streamer {
-    background-size: 119%;
-    background-position: 0 0; } }
+    background-position: center 30%; }
+  .container-homepage .carousel-fullscreen-sidebar {
+    width: 1174px; } }
 
 @media (min-width: 1431px) {
   .container-homepage .carousel-fullscreen-sidebar {

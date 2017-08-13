@@ -66,11 +66,11 @@ export default class FeatureInstruction extends Component{
                                             <span className="editorial-instructor-unit--c_editorial-unit__featured-label--3fZCy">
                                                 {o.des3}
                                             </span>
-                                                    <a href="/the-complete-web-developer-course-2/" className="editorial-instructor-unit--c_editorial-unit__instructor-cta--3Jx7q" tabindex="0">
+                                                    <a href="/the-complete-web-developer-course-2/" className="editorial-instructor-unit--c_editorial-unit__instructor-cta--3Jx7q" tabIndex="0">
                                                         <img alt="" src={o.imgDes4}/>
                                                         <span>{o.des4}</span>
                                                     </a>
-                                                    <a href="/complete-ios-10-developer-course/" className="editorial-instructor-unit--c_editorial-unit__instructor-cta--3Jx7q" tabindex="0">
+                                                    <a href="/complete-ios-10-developer-course/" className="editorial-instructor-unit--c_editorial-unit__instructor-cta--3Jx7q" tabIndex="0">
                                                         <img alt="" src={o.imgDes5}/>
                                                         <span>{o.des5}</span>
                                                     </a>

@@ -5,7 +5,7 @@
 @font-face {
   font-family: 'Open Sans';
   src: url(fonts/OpenSans1.woff2) format("woff2");
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal; }
 
 @font-face {
@@ -266,18 +266,6 @@ p {
 .container-fluid:after, .container:after, .row:after {
   clear: both; }
 
-@media (min-width: 768px) {
-  .container {
-    width: 750px; } }
-
-@media (min-width: 992px) {
-  .container {
-    width: 970px; } }
-
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px; } }
-
 .open > a {
   outline: 0; }
 
@@ -398,6 +386,42 @@ p {
 
 .udi-it-and-software:before {
   content: "\E6D2"; }
+
+.udi-office-productivity:before {
+  content: "\E6ED"; }
+
+.udi-personal-development:before {
+  content: "\E6F3"; }
+
+.udi-design:before {
+  content: "\E6AC"; }
+
+.udi-marketing:before {
+  content: "\E6DC"; }
+
+.udi-lifestyle:before {
+  content: "\E6D9"; }
+
+.udi-photography:before {
+  content: "\E6F9"; }
+
+.udi-health-and-fitness:before {
+  content: "\E6C4"; }
+
+.udi-teacher-training:before {
+  content: "\E715"; }
+
+.udi-music:before {
+  content: "\E6E9"; }
+
+.udi-academics:before {
+  content: "\E693"; }
+
+.udi-language:before {
+  content: "\E6D6"; }
+
+.udi-test-prep:before {
+  content: "\E717"; }
 
 .udi-web-development:before {
   content: "\E720"; }
@@ -1058,6 +1082,10 @@ p {
 .non-student-cta__link a {
   margin-top: 1em; }
 
+.non-student-cta__text {
+  max-width: 320px;
+  text-align: center; }
+
 .lang-dropdown {
   margin-top: -4px;
   margin-right: 25px; }
@@ -1118,6 +1146,61 @@ p {
   .editorial-instructor-unit--c_editorial-unit__instructor-cta--3Jx7q:last-child {
     display: none; } }
 
+@media screen and (max-width: 768px) {
+  .merchandising-course-card--responsive--2gbJO {
+    border-bottom: 1px solid #e3e3e3;
+    display: block;
+    width: auto;
+    height: auto;
+    box-shadow: none; }
+    .merchandising-course-card--responsive--2gbJO .merchandising-course-card--mask--22Fbx {
+      display: flex;
+      background: none;
+      padding: 5px 0; }
+      .merchandising-course-card--responsive--2gbJO .merchandising-course-card--mask--22Fbx .merchandising-course-card--card__instructor-titles--2G1cg, .merchandising-course-card--responsive--2gbJO .merchandising-course-card--mask--22Fbx .merchandising-course-card--details__name--f-IuD {
+        height: auto;
+        margin: 0; }
+    .merchandising-course-card--responsive--2gbJO .merchandising-course-card--card__options--2qpEK {
+      height: 87px;
+      overflow: hidden;
+      min-width: 87px;
+      width: 87px; }
+      .merchandising-course-card--responsive--2gbJO .merchandising-course-card--card__options--2qpEK img {
+        max-width: none;
+        width: auto;
+        height: 87px;
+        margin-left: -34px; }
+    .merchandising-course-card--responsive--2gbJO .merchandising-course-card--card__details--2yDtK {
+      display: block;
+      width: 100%;
+      padding: 0 0 0 10px; }
+      .merchandising-course-card--responsive--2gbJO .merchandising-course-card--card__details--2yDtK .merchandising-course-card--card__instructor-titles--2G1cg, .merchandising-course-card--responsive--2gbJO .merchandising-course-card--card__details--2yDtK .merchandising-course-card--details__name--f-IuD {
+        min-height: 0;
+        margin: 0 0 5px !important; }
+    .merchandising-course-card--responsive--2gbJO .merchandising-course-card--card__pricing--2WOFo {
+      padding-left: 0;
+      padding-bottom: 0;
+      min-height: 0;
+      padding-right: 5px; }
+  .star-rating--details__rating--3ldWC {
+    padding: 0 15px 0 0; }
+  .new-channel .carousel-fullscreen-sidebar {
+    padding: 0 20px;
+    width: 100%; }
+  .c_collection__item {
+    width: 45% !important;
+    flex: auto;
+    min-width: 1px; }
+    .c_collection__item:nth-child(n) {
+      margin-right: 15px !important; }
+    .c_collection__item:first-child {
+      flex: 1 0 100%;
+      margin-right: 0 !important; } }
+
+@media (max-width: 768px) {
+  .streamer .container {
+    width: 100%; } }
+
 @media (max-width: 767px) {
   .editorial-instructor-unit--c_editorial-unit__title--3e1Au h1 {
     font-size: 28px;
@@ -1127,12 +1210,18 @@ p {
     margin-right: 16px; } }
 
 @media (max-width: 600px) {
+  .streamer__content {
+    padding-left: 0; }
   .slick-carousel {
     width: 100%;
     margin: 0;
     height: 250px; } }
 
 @media (max-width: 575px) {
+  .streamer__content {
+    width: 100%;
+    position: relative;
+    z-index: 11; }
   .editorial-instructor-unit--c_editorial-unit--hwtt0 {
     height: 250px;
     padding: 20px;
@@ -1234,9 +1323,6 @@ p {
       border-bottom: none;
       border-right: 1px solid #dfdfdf;
       padding: 28px 30px; }
-  .non-student-cta__text {
-    max-width: 320px;
-    text-align: center; }
   .non-student-cta__header {
     font-size: 24px; }
   .non-student-cta__content {
@@ -1245,15 +1331,27 @@ p {
   .non-student-cta__link {
     padding-top: 5px; }
     .non-student-cta__link a {
-      font-size: 15px; } }
+      font-size: 15px; }
+  .container {
+    width: 750px; }
+  .carousel-fullscreen-sidebar {
+    width: 754px;
+    padding-left: 15px;
+    padding-right: 15px; } }
 
 @media (min-width: 992px) {
+  .container {
+    width: 970px; }
+  .carousel-fullscreen-sidebar {
+    width: 974px; }
   .merchandising-course-card--card--18b3i {
     width: 220px; }
   .slider-list--slider-wrapper--3jv2F {
     width: 925px; } }
 
 @media (min-width: 1200px) {
+  .container {
+    width: 1170px; }
   .merchandising-course-card--card--18b3i {
     width: 216px; }
   .slider-list--slider-wrapper--3jv2F {
@@ -1262,53 +1360,3 @@ p {
 @media (min-width: 1430px) {
   .slider-list--slider-wrapper--3jv2F {
     width: 1371px; } }
-
-@media screen and (max-width: 768px) {
-  .merchandising-course-card--responsive--2gbJO {
-    border-bottom: 1px solid #e3e3e3;
-    display: block;
-    width: auto;
-    height: auto;
-    box-shadow: none; }
-    .merchandising-course-card--responsive--2gbJO .merchandising-course-card--mask--22Fbx {
-      display: flex;
-      background: none;
-      padding: 5px 0; }
-      .merchandising-course-card--responsive--2gbJO .merchandising-course-card--mask--22Fbx .merchandising-course-card--card__instructor-titles--2G1cg, .merchandising-course-card--responsive--2gbJO .merchandising-course-card--mask--22Fbx .merchandising-course-card--details__name--f-IuD {
-        height: auto;
-        margin: 0; }
-    .merchandising-course-card--responsive--2gbJO .merchandising-course-card--card__options--2qpEK {
-      height: 87px;
-      overflow: hidden;
-      min-width: 87px;
-      width: 87px; }
-      .merchandising-course-card--responsive--2gbJO .merchandising-course-card--card__options--2qpEK img {
-        max-width: none;
-        width: auto;
-        height: 87px;
-        margin-left: -34px; }
-    .merchandising-course-card--responsive--2gbJO .merchandising-course-card--card__details--2yDtK {
-      display: block;
-      width: 100%;
-      padding: 0 0 0 10px; }
-      .merchandising-course-card--responsive--2gbJO .merchandising-course-card--card__details--2yDtK .merchandising-course-card--card__instructor-titles--2G1cg, .merchandising-course-card--responsive--2gbJO .merchandising-course-card--card__details--2yDtK .merchandising-course-card--details__name--f-IuD {
-        min-height: 0;
-        margin: 0 0 5px !important; }
-    .merchandising-course-card--responsive--2gbJO .merchandising-course-card--card__pricing--2WOFo {
-      padding-left: 0;
-      padding-bottom: 0;
-      min-height: 0; }
-  .star-rating--details__rating--3ldWC {
-    padding: 0 15px 0 0; }
-  .new-channel .carousel-fullscreen-sidebar {
-    padding: 0 20px;
-    width: 100%; }
-  .c_collection__item {
-    width: 45% !important;
-    flex: auto;
-    min-width: 1px; }
-    .c_collection__item:nth-child(n) {
-      margin-right: 15px !important; }
-    .c_collection__item:first-child {
-      flex: 1 0 100%;
-      margin-right: 0 !important; } }

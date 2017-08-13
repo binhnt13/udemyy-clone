@@ -9,7 +9,6 @@ const App = () => (
     <Router>
         <div>
             <Header />
-            <Route exact path="/" component={Homepage}/>
             <Route path="/*" component={Homepage}/>
             <Footer />
         </div>
