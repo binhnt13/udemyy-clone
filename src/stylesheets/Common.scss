@@ -179,6 +179,11 @@ p {
   color: #fff;
   background-color: #17aa1c;
   border-color: transparent;
+
+  &:hover {
+    background-color: #159d1a;
+    border-color: transparent;
+  }
 }
 
 .btn-group, .btn-group-vertical {
